@@ -9,21 +9,13 @@ toggles.forEach(toggle => toggle.addEventListener('change', (e) => {
 
 function doTheTrick(theClickedOne) {
     if (good.checked && cheap.checked) {
-        {
-            fast.checked = false
-        }
-
+        fast.checked = false
     }
-    if (good.checked && fast.checked) {
-        {
-            cheap.checked = false
-        }
-
+    else if (good.checked && fast.checked) {
+        cheap.checked = false
     }
-    if (fast.checked && cheap.checked) {
-        {
-            good.checked = false
-        }
-
+    else {
+        good.checked = false
     }
+
 }
